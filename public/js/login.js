@@ -1,4 +1,4 @@
-const API = 'https://utube-back-end.herokuapp.com';
+const API = 'http://localhost:5000';
 
 const form = document.querySelector('.site-form');
 
