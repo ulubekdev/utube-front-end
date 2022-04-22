@@ -23,4 +23,4 @@ app.get('/admin', (req, res) => {
     res.sendFile(path.join(process.cwd(), 'views', 'admin.html'));
 });
 
-app.listen(PORT, () => console.log(`Client is running at http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Client is running on port ${PORT}`));

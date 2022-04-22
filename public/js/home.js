@@ -11,10 +11,10 @@ const searchInput = document.querySelector('.search-input');
 const microPhone = document.querySelector('.web-speech');
 const makeAdmin = document.querySelector('.makeAdmin');
 
-userImg.src = API + '/images/' + userPic;
-userImg.alt = 'channel-icon'
-userImg.setAttribute('width', '35px');
-userImg.setAttribute('height', '35px');
+// userImg.src = API + '/images/' + userPic
+// userImg.alt = 'channel-icon'
+// userImg.setAttribute('width', '35px');
+// userImg.setAttribute('height', '35px');
 
 if(token) {
     makeAdmin.setAttribute('href', '/admin');
@@ -35,7 +35,7 @@ async function renderUsers() {
         li.className = 'channel';
         li.setAttribute('data-id', user.id);
 
-        img.src = API + '/images/' + user.userImg;
+        img.src = API + '/images/' + user.userImg
         img.alt = 'channel-icon'
         img.setAttribute('width', '35px');
         img.setAttribute('height', '35px');
