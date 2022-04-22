@@ -11,14 +11,11 @@ const searchInput = document.querySelector('.search-input');
 const microPhone = document.querySelector('.web-speech');
 const makeAdmin = document.querySelector('.makeAdmin');
 
-// userImg.src = API + '/images/' + userPic
-// userImg.alt = 'channel-icon'
-// userImg.setAttribute('width', '35px');
-// userImg.setAttribute('height', '35px');
-
 if(token) {
+    userImg.src = API + '/images/' + userPic;
     makeAdmin.setAttribute('href', '/admin');
 } else {
+    userImg.src = './img/avatar.jpg';
     makeAdmin.setAttribute('href', '/register');
 }
 
@@ -46,10 +43,6 @@ async function renderUsers() {
         li.append(a);
 
         usersList.append(li);
-
-        if(!token) {
-            userImg.src = './img/avatar.jpg';
-        }
 
         a.onclick = () => {
             searchByQuery(`userId=${user.id}`);
