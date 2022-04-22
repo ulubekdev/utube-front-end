@@ -1,4 +1,4 @@
-const API = 'http://localhost:5000';
+const API = 'https://utube-back-end.herokuapp.com';
 
 let token = window.localStorage.getItem('token');
 let userPic = window.localStorage.getItem('userImg');
