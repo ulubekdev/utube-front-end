@@ -15,7 +15,7 @@ if(token) {
     userImg.src = API + '/images/' + userPic;
     makeAdmin.setAttribute('href', '/admin');
 } else {
-    userImg.src = '../img/avatar.jpg';
+    userImg.src = './img/avatar.jpg';
     makeAdmin.setAttribute('href', '/register');
 }
 
