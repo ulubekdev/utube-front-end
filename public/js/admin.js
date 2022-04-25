@@ -169,7 +169,11 @@ async function createVideo () {
         });
 
     } else {
-        console.log(data.message);
+        if(data.status == 403) {
+            window.localStorage.removeItem('userImg');
+            window.localStorage.removeItem('token');
+            window.location = '/login';
+        }
     }
 
 }
