@@ -1,4 +1,4 @@
-const API = 'http://localhost:5000';
+const API = 'https://utube-back-end.herokuapp.com';
 
 const videosList = document.querySelector('.videos-list');
 
